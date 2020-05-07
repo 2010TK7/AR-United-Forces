@@ -1,0 +1,16 @@
+{
+	"name": "AR United Forces",
+	"description": "Red Alert 2 XD",
+	"author": "TK7"
+	"contact": "http://steamcommunity.com/id/2010TK7",
+	"version": "2.1",
+	"blt_version": 2,
+	"color" : "255 0 0",
+	"hooks":
+	[
+		{
+			"hook_id": "lib/tweak_data/groupaitweakdata",
+			"script_path": "groupaitweakdata_2.1.lua"
+		}
+	]
+}
