@@ -3,7 +3,7 @@
 	"description": "Allow you have different unit in each heists",
 	"author": "TK7, Schrodinger_Sig"
 	"contact": "https://steamcommunity.com/id/2010TK7 https://steamcommunity.com/id/xdedxg",
-	"version": "2.3.4",
+	"version": "2.3.5",
 	"image": "AR.png",
 	"blt_version": 2,
 	"updates": [

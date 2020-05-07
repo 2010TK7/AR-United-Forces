@@ -12,12 +12,15 @@
 	"AR_Z_title_Z": "Allow Zombies spawn",
 	"AR_M_title": "(REQ SSR)Murkywater",
 	"AR_M_title_M": "Allow Murkywater spawn",
+	"AR_F_title": "(REQ SSR)Federales",
+	"AR_F_title_F": "Allow Federales spawn",
 	"AR_O_title": "(REQ SSR)ZEAL Unit",
-	"AR_A_desc": "SWAT, FBI, Gensec, and ZEAL(only appear in DW/DS difficunty)",
+	"AR_A_desc": "SWAT, FBI, Gensec, and ZEAL(only appear in DS difficunty)",
 	"AR_R_desc": "Rassian Mercenaries that only appear in Boiling Point",
 	"AR_Z_desc": "Zombie SWAT/FBI that only appear in Cursed Kill Room",
 	"AR_M_desc": "Murkywater that appear in Hell's Island",
-	"AR_O_desc": "Allow ZEAL Unit spawn in non-DW/DS difficulty.",
+	"AR_F_desc": "Federales that appear in San Martín Bank",
+	"AR_O_desc": "Allow ZEAL Unit spawn in non-DS difficulty.",
 	"ARA_menu_title": "Normal Heists",
 	"ARA_menu_desc": "Most of Heists",
 	"ARR_menu_title": "Russia Heists",
@@ -25,5 +28,7 @@
 	"ARZ_menu_title": "Events Heists",
 	"ARZ_menu_desc": "Cursed Kill Room only",
 	"ARM_menu_title": "Murkywater Heists",
-	"ARM_menu_desc": "Beneath the Mountain, Henry's Rock, Hell's Island and The White House"
+	"ARM_menu_desc": "Beneath the Mountain, Henry's Rock, Hell's Island and The White House",
+	"ARF_menu_title": "Federales Heists",
+	"ARF_menu_desc": "San Martín Bank"
 }

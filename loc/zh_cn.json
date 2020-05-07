@@ -12,11 +12,14 @@
 	"AR_Z_title_Z": "丧尸警察生成",
 	"AR_M_title": "(需SSR支持)黑水佣兵生成",
 	"AR_M_title_M": "黑水佣兵生成",
+	"AR_F_title": "(需SSR支持)墨西哥联邦部队生成",
+	"AR_F_title_F": "墨西哥联邦部队生成",
 	"AR_O_title": "(需SSR支持)ZEAL部队生成",
 	"AR_A_desc": "SWAT, FBI, Gensec和仅生成在死亡裁决的ZEAL",
 	"AR_R_desc": "生成于沸点的俄罗斯雇佣兵",
 	"AR_Z_desc": "生成于咒怨空间的丧尸化SWAT和FBI",
 	"AR_M_desc": "初生成于地狱岛的黑水雇佣兵",
+	"AR_F_desc": "初生成于圣马丁银行的墨西哥联邦部队",
 	"AR_O_desc": "在非死亡裁决难度生成ZEAL",
 	"ARA_menu_title": "普通劫案",
 	"ARA_menu_desc": "绝大多数的劫案",
@@ -25,5 +28,7 @@
 	"ARZ_menu_title": "丧尸劫案",
 	"ARZ_menu_desc": "默认为咒怨空间",
 	"ARM_menu_title": "黑水劫案",
-	"ARM_menu_desc": "山脊之下, 夺宝奇兵, 地狱岛, 白宫风云(等?)劫案"
+	"ARM_menu_desc": "山脊之下, 夺宝奇兵, 地狱岛, 白宫风云(等?)劫案",
+	"ARF_menu_title": "墨西哥劫案",
+	"ARF_menu_desc": "目前为圣马丁银行"
 }

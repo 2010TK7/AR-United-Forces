@@ -28,4 +28,5 @@ Hooks:Add('MenuManagerInitialize', 'AR_MenuManagerInitialize', function(menu_man
 	MenuHelper:LoadFromJsonFile(UnitedForces._path .. 'menu/russia.json', UnitedForces, UnitedForces.settings)
 	MenuHelper:LoadFromJsonFile(UnitedForces._path .. 'menu/zombie.json', UnitedForces, UnitedForces.settings)
 	MenuHelper:LoadFromJsonFile(UnitedForces._path .. 'menu/murkywater.json', UnitedForces, UnitedForces.settings)
+	MenuHelper:LoadFromJsonFile(UnitedForces._path .. 'menu/federales.json', UnitedForces, UnitedForces.settings)
 end)

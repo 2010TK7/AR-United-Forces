@@ -1,63 +1,63 @@
 {
-	"menu_id": "ARZ_menu",
+	"menu_id": "ARF_menu",
 	"parent_menu_id": "AR_menu",
-	"title": "ARZ_menu_title",
-	"description": "ARZ_menu_desc",
+	"title": "ARF_menu_title",
+	"description": "ARF_menu_desc",
 	"back_callback": "ARSave",
 	"items":
 	[
 		{
 			"type": "toggle",
-			"id": "AR_ZA",
+			"id": "AR_FA",
 			"title": "AR_A_title",
 			"description": "AR_A_desc",
 			"callback": "ARCheck",
-			"value": "AR_ZA",
+			"value": "AR_FA",
 			"default_value": false
 		},
 		{
 			"type": "toggle",
-			"id": "AR_ZR",
+			"id": "AR_FR",
 			"title": "AR_R_title",
 			"description": "AR_R_desc",
 			"callback": "ARCheck",
-			"value": "AR_ZR",
+			"value": "AR_FR",
 			"default_value": false
 		},
 		{
 			"type": "toggle",
-			"id": "AR_ZZ",
-			"title": "AR_Z_title_Z",
+			"id": "AR_FZ",
+			"title": "AR_Z_title",
 			"description": "AR_Z_desc",
 			"callback": "ARCheck",
-			"value": "AR_ZZ",
+			"value": "AR_FZ",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AR_FM",
+			"title": "AR_M_title",
+			"description": "AR_M_desc",
+			"callback": "ARCheck",
+			"value": "AR_FM",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AR_FF",
+			"title": "AR_F_title_F",
+			"description": "AR_F_desc",
+			"callback": "ARCheck",
+			"value": "AR_FF",
 			"default_value": true
 		},
 		{
 			"type": "toggle",
-			"id": "AR_ZM",
-			"title": "AR_M_title",
-			"description": "AR_M_desc",
-			"callback": "ARCheck",
-			"value": "AR_ZM",
-			"default_value": false
-		},
-		{
-			"type": "toggle",
-			"id": "AR_ZF",
-			"title": "AR_F_title",
-			"description": "AR_F_desc",
-			"callback": "ARCheck",
-			"value": "AR_ZF",
-			"default_value": false
-		},
-		{
-			"type": "toggle",
-			"id": "AR_ZO",
+			"id": "AR_FO",
 			"title": "AR_O_title",
 			"description": "AR_O_desc",
 			"callback": "ARCheck",
-			"value": "AR_ZO",
+			"value": "AR_FO",
 			"default_value": false
 		}
 	]

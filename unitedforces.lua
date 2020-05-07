@@ -5,31 +5,43 @@ _G.UnitedForces = _G.UnitedForces or {}
 UnitedForces._path = ModPath
 UnitedForces._data_path = SavePath .. 'Tmod_TAR.txt'
 UnitedForces.settings = UnitedForces.settings or {
-	AR_Lang = 1,
-
 	AR_AA = true,
 	AR_AR = false,
 	AR_AZ = false,
 	AR_AM = false,
-	AR_AO = false,
+	AR_AF = false,
 
 	AR_RA = false,
 	AR_RR = true,
 	AR_RZ = false,
 	AR_RM = false,
-	AR_RO = false,
+	AR_RF = false,
 
 	AR_ZA = false,
 	AR_ZR = false,
 	AR_ZZ = true,
 	AR_ZM = false,
-	AR_ZO = false,
+	AR_ZF = false,
 
 	AR_MA = false,
 	AR_MR = false,
 	AR_MZ = false,
 	AR_MM = true,
-	AR_MO = false
+	AR_MF = false,
+
+	AR_FA = false,
+	AR_FR = false,
+	AR_FZ = false,
+	AR_FM = false,
+	AR_FF = true,
+
+	AR_AO = false,
+	AR_RO = false,
+	AR_ZO = false,
+	AR_MO = false,
+	AR_FO = false,
+
+	AR_Lang = 1
 }
 
 function UnitedForces:Save()
@@ -115,28 +127,39 @@ function UnitedForces:ARUnitedForces(u_type_name, current_unit_type)
 	local _ARR = UnitedForces.settings.AR_AR
 	local _ARZ = UnitedForces.settings.AR_AZ
 	local _ARM = UnitedForces.settings.AR_AM
+	local _ARF = UnitedForces.settings.AR_AF
 	local _ARO = UnitedForces.settings.AR_AO
 	if current_unit_type == "russia" then
 		_ARA = UnitedForces.settings.AR_RA
 		_ARR = UnitedForces.settings.AR_RR
 		_ARZ = UnitedForces.settings.AR_RZ
 		_ARM = UnitedForces.settings.AR_RM
+		_ARF = UnitedForces.settings.AR_RF
 		_ARO = UnitedForces.settings.AR_RO
 	elseif current_unit_type == "zombie" then
 		_ARA = UnitedForces.settings.AR_ZA
 		_ARR = UnitedForces.settings.AR_ZR
 		_ARZ = UnitedForces.settings.AR_ZZ
 		_ARM = UnitedForces.settings.AR_ZM
+		_ARF = UnitedForces.settings.AR_ZF
 		_ARO = UnitedForces.settings.AR_ZO
 	elseif current_unit_type == "murkywater" then
 		_ARA = UnitedForces.settings.AR_MA
 		_ARR = UnitedForces.settings.AR_MR
 		_ARZ = UnitedForces.settings.AR_MZ
 		_ARM = UnitedForces.settings.AR_MM
+		_ARF = UnitedForces.settings.AR_MF
 		_ARO = UnitedForces.settings.AR_MO
+	elseif current_unit_type == "federales" then
+		_ARA = UnitedForces.settings.AR_FA
+		_ARR = UnitedForces.settings.AR_FR
+		_ARZ = UnitedForces.settings.AR_FZ
+		_ARM = UnitedForces.settings.AR_FM
+		_ARF = UnitedForces.settings.AR_FF
+		_ARO = UnitedForces.settings.AR_FO
 	end
 
-	if not (_ARA or _ARR or _ARZ or _ARM or _ARO and UnitedForces.zeal[u_type_name] and Global.game_settings.difficulty ~= "sm_wish") then
+	if not (_ARA or _ARR or _ARZ or _ARM or _ARF or _ARO and UnitedForces.zeal[u_type_name] and Global.game_settings.difficulty ~= "sm_wish") then
 		return tweak_data.group_ai.unit_categories[u_type_name].unit_types[current_unit_type]
 	end
 
@@ -152,6 +175,9 @@ function UnitedForces:ARUnitedForces(u_type_name, current_unit_type)
 	end
 	if _ARM then
 		table.insert(ARbucket, "murkywater")
+	end
+	if _ARF then
+		table.insert(ARbucket, "federales")
 	end
 	if _ARO and UnitedForces.zeal[u_type_name] and Global.game_settings.difficulty ~= "sm_wish" then
 		table.insert(ARbucket, "zeal")

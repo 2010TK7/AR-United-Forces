@@ -44,6 +44,15 @@
 		},
 		{
 			"type": "toggle",
+			"id": "AR_RF",
+			"title": "AR_F_title",
+			"description": "AR_F_desc",
+			"callback": "ARCheck",
+			"value": "AR_RF",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
 			"id": "AR_RO",
 			"title": "AR_O_title",
 			"description": "AR_O_desc",
