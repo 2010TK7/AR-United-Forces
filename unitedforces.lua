@@ -3,7 +3,7 @@ if _G[key] then return else _G[key] = true end
 
 _G.UnitedForces = _G.UnitedForces or {}
 UnitedForces._path = ModPath
-UnitedForces._data_path = SavePath .. 'TAR.txt'
+UnitedForces._data_path = SavePath .. 'Tmod_TAR.txt'
 UnitedForces.settings = UnitedForces.settings or {
 	AR_Lang = 1,
 

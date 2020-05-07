@@ -3,9 +3,12 @@
 	"description": "Allow you have different unit in each heists",
 	"author": "TK7, Schrodinger_Sig"
 	"contact": "https://steamcommunity.com/id/2010TK7 https://steamcommunity.com/id/xdedxg",
-	"version": "2.3.3",
+	"version": "2.3.4",
 	"image": "AR.png",
 	"blt_version": 2,
+	"updates": [
+		{"identifier": "TAR", "host": {"meta": "https://storage.live.com/items/8C3AB972E7E69B18!118?authkey=!AOZoHHpqnlDeZes"}}
+	],
 	"color" : "255 0 0",
 	"hooks": [
 		{"hook_id": "lib/managers/menumanager", "script_path": "menumanager.lua"},
