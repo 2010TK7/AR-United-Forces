@@ -4,7 +4,7 @@ if _G[key] then return else _G[key] = true end
 _G.UnitedForces = _G.UnitedForces or {}
 UnitedForces._path = ModPath
 UnitedForces._data_path = SavePath .. 'TAR.txt'
-UnitedForces.settings = {
+UnitedForces.settings = UnitedForces.settings or {
 	AR_Lang = 1,
 
 	AR_AA = true,
@@ -90,6 +90,20 @@ else
 		Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic/ene_bulldozer_medic"),
 		Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 	}
+end
+if CommonModifiers and CommonModifiers.Checker then
+	if _CM.CM_BlackDozer and difficulty_index <= 4 then
+		table.insert(UnitedForces.zeal.FBI_tank, Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"))
+	end
+	if _CM.dozer_lmg and difficulty_index <= 6 then
+		table.insert(UnitedForces.zeal.FBI_tank, Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer/ene_zeal_bulldozer"))
+	end
+	if _CM.dozer_minigun and difficulty_index <= 6 then
+		table.insert(UnitedForces.zeal.FBI_tank, Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"))
+	end
+	if _CM.dozer_medic and difficulty_index <= 7 then
+		table.insert(UnitedForces.zeal.FBI_tank, Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic/ene_bulldozer_medic"))
+	end
 end
 
 function UnitedForces:ARUnitedForces(u_type_name, current_unit_type)

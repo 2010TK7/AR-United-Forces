@@ -7,7 +7,6 @@ function GroupAIStateBesiege:_perform_group_spawning(spawn_task, force, use_last
 	local group_ai_tweak = tweak_data.group_ai
 	local spawn_points = spawn_task.spawn_group.spawn_pts
 
-
 	local function _try_spawn_unit(u_type_name, spawn_entry)
 		if GroupAIStateBesiege._MAX_SIMULTANEOUS_SPAWNS <= nr_units_spawned and not force then
 			return
@@ -20,21 +19,16 @@ function GroupAIStateBesiege:_perform_group_spawning(spawn_task, force, use_last
 			local category = group_ai_tweak.unit_categories[u_type_name]
 
 			if (sp_data.accessibility == "any" or category.access[sp_data.accessibility]) and (not sp_data.amount or sp_data.amount > 0) and sp_data.mission_element:enabled() then
-
 				hopeless = false
 
 				if sp_data.delay_t < self._t then
 					local units = category.unit_types[current_unit_type]
+					--AR start
 					if UnitedForces then
 						units = UnitedForces:ARUnitedForces(u_type_name, current_unit_type)
 					end
+					--AR end
 					produce_data.name = units[math.random(#units)]
-					if UnitedOffensive then
-						UnitedOffensive:Load()
-						if UnitedOffensive.settings.CM_Sniper then
-							produce_data.name = UnitedOffensive:CMSniper(produce_data.name)
-						end
-					end
 					produce_data.name = managers.modifiers:modify_value("GroupAIStateBesiege:SpawningUnit", produce_data.name)
 					local spawned_unit = sp_data.mission_element:produce(produce_data)
 					local u_key = spawned_unit:key()
