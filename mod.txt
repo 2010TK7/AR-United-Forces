@@ -1,16 +1,16 @@
 {
 	"name": "AR United Forces",
-	"description": "Red Alert 2 XD",
-	"author": "TK7"
-	"contact": "http://steamcommunity.com/id/2010TK7",
-	"version": "2.1",
+	"description": "Allow you have different unit in each heists",
+	"author": "TK7, Schrodinger_Sig"
+	"contact": "https://steamcommunity.com/id/2010TK7 https://steamcommunity.com/id/xdedxg",
+	"version": "2.2",
+	"image": "AR.png",
 	"blt_version": 2,
 	"color" : "255 0 0",
-	"hooks":
-	[
-		{
-			"hook_id": "lib/tweak_data/groupaitweakdata",
-			"script_path": "groupaitweakdata_2.1.lua"
-		}
+	"hooks": [
+		{"hook_id": "lib/managers/menumanager", "script_path": "lua/unitedforces.lua"},
+		{"hook_id": "lib/managers/menumanager", "script_path": "lua/menumanager.lua"},
+		{"hook_id": "lib/managers/group_ai_states/groupaistatebesiege", "script_path": "lua/unitedforces.lua"},
+		{"hook_id": "lib/managers/group_ai_states/groupaistatebesiege", "script_path": "lua/groupaistatebesiege.lua"}
 	]
 }

@@ -1,0 +1,55 @@
+{
+	"menu_id": "ARA_menu",
+	"parent_menu_id": "AR_menu",
+	"title": "ARA_menu_title",
+	"description": "ARA_menu_desc",
+	"back_callback": "ARSave",
+	"items":
+	[
+		{
+			"type": "toggle",
+			"id": "AR_AA",
+			"title": "AR_A_title",
+			"description": "AR_A_desc",
+			"callback": "ARCheck",
+			"value": "AR_AA",
+			"default_value": true
+		},
+		{
+			"type": "toggle",
+			"id": "AR_AR",
+			"title": "AR_R_title",
+			"description": "AR_R_desc",
+			"callback": "ARCheck",
+			"value": "AR_AR",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AR_AZ",
+			"title": "AR_Z_title",
+			"description": "AR_Z_desc",
+			"callback": "ARCheck",
+			"value": "AR_AZ",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AR_AM",
+			"title": "AR_M_title",
+			"description": "AR_M_desc",
+			"callback": "ARCheck",
+			"value": "AR_AM",
+			"default_value": false
+		},
+		{
+			"type": "toggle",
+			"id": "AR_AO",
+			"title": "AR_O_title",
+			"description": "AR_O_desc",
+			"callback": "ARCheck",
+			"value": "AR_AO",
+			"default_value": false
+		}
+	]
+}

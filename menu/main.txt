@@ -1,0 +1,28 @@
+{
+	"menu_id": "AR_menu",
+	"parent_menu_id": "blt_options",
+	"title": "AR_menu_title",
+	"description": "AR_menu_desc",
+	"back_callback": "ARSave",
+	"items":
+	[
+		{
+			"type": "multiple_choice",
+			"id": "AR_Lang",
+			"title": "AR_Lang_title",
+			"description": "AR_Lang_desc",
+			"callback": "ARLang",
+			"items":
+			[
+				"AR_Lang_en",
+				"AR_Lang_zh_cn"
+			],
+			"value": "AR_Lang",
+			"default_value": 1
+		},
+		{
+			"type": "divider",
+			"size": 32
+		}
+	]
+}
